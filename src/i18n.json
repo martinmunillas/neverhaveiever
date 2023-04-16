@@ -1,0 +1,22 @@
+{
+  "title": {
+    "en": "Never have I ever",
+    "es": "Yo nunca nunca"
+  },
+  "start": {
+    "en": "Start",
+    "es": "Empezar"
+  },
+  "next": {
+    "en": "Next",
+    "es": "Siguiente"
+  },
+  "previous": {
+    "en": "Previous",
+    "es": "Anterior"
+  },
+  "random": {
+    "en": "Random",
+    "es": "Aleatorio"
+  }
+}
