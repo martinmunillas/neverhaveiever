@@ -1,47 +1,45 @@
-# Svelte + TS + Vite
+# Never Have I Ever
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+## Overview
 
-## Recommended IDE Setup
+*Never Have I Ever* is a web application that allows users to play with friends. This app generates a list of statements that begin with (I have never...), and users can either agree or disagree with each statement.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Features
 
-## Need an official Svelte framework?
+- Responsive web design
+- Easy to use interface
+- A variety of "I have never" statements to keep the game entertaining
+- Supports multiple languages (English and Spanish)
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Installation
 
-## Technical considerations
+1. Clone the repository:
 
-**Why use this over SvelteKit?**
+`git clone https://github.com/yourusername/your-repository-name.git`
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+2. Install dependencies:
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+`yarn install`
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+3. Start the development server:
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+`yarn start`
 
-**Why include `.vscode/extensions.json`?**
+## Usage
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+Visit the app in your browser at http://localhost:3000 (or the port specified by your development server).
 
-**Why enable `allowJs` in the TS template?**
+## Deployment
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+To deploy the app to GitHub Pages, use the provided GitHub Actions workflow. Push your changes to the `main` branch, and the app will be automatically built and deployed to GitHub Pages.
 
-**Why is HMR not preserving my local component state?**
+## Contributing
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+Contributions are welcome! To contribute, please follow these steps:
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m "Add your feature"`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
